@@ -1,0 +1,1263 @@
+<html>
+<head>
+<title> FGDC Metadata for UVADMN3 </title>
+</head>
+<body>
+
+<h1>
+Metadata for UVADMN3 <p>
+</h1>
+<pre>
+<h3><a name="TOC"> Table of Contents </a></h3>
+<pre>
+<a href="#section1">Identification_Information</a>
+     <a href="#section1.2.1">Abstract </a>
+     <a href="#section1.2.2">Purpose </a>
+     <a href="#section1.2.3">Supplemental Information </a>
+<a href="#section2">Data_Quality_Information</a>
+<a href="#section3">Spatial_Data_Organization_Information</a>
+<a href="#section5">Entity_and_Attribute_Information</a>
+     <a href="#section5">Detailed Description</a>
+     <a href="#section5.2.1">Overview </a>
+<a href="#section6">Distribution_Information</a>
+<a href="#section7">Metadata_Reference_Section</a><p>
+<hr>
+<h3><a name="section1">Identification_Information </a></h3>
+<b><a name="section1.1">Citation_Information </a></b>
+    <b>Originator:</b> USAID / FEWS
+    <b>Publication_Date:</b> 1996
+    <b>Publication_Time:</b> 0000
+    <b>Title:</b> UVADMN3
+    <b>Edition:</b> 1
+    <b>Geospatial_Data_Presentation_Format:</b> map
+    <b>Series_Information</b>
+        Series_Name: FEWS 3
+        Issue_Identification: 1
+    <b>Publication_Information</b>
+        Publication_Place: Sioux Falls, SD, USA
+        Publisher: EDC/International Program
+    <b>Other_Citation_Details:</b> FEWS/EROS Data Center (EDC)
+    <b>Online_Linkage:</b> http://edcintl.cr.usgs.gov/adds/adds.html
+    <b>Larger_Work_Citation:</b> None
+<p>
+<b><a name="section1.2">Description </a></b> 
+    <b><a name="section1.2.1">Abstract</a></b>
+    This ARC/INFO polygon coverage contains the third level
+    administrative boundaries at a 1:1000000 scale.
+     
+    The coverage is part of the Famine Early Warning System (FEWS) /
+    Associates in Rural Development (ARD) African series.
+     
+    Burkina Faso is associated with the Sahel region of Africa.
+     
+     
+     
+    Keywords:
+    Boundary, Burkina Faso, UV, BF,
+    Sahel Region, Africa
+     
+     
+     
+     
+    <b><a name="section1.2.2">Purpose</a></b>
+    This data set is to be used in conjunction with other
+    layers of Burkina Faso data.  The data are intended to show the
+    spatial distribution of the third level administrative
+    boundaries for Burkina Faso.
+     
+    The data are to be used in modeling, targeting and
+    demonstration projects.  The data are also used in natural
+    resource management, inventory, change analysis, policy
+    making, environmental awareness and land use planning.
+     
+     
+     
+     
+<b><a name="section1.2.3">Supplemental_Information</b>
+    <b>Procedures_Used</b>
+    The departmental boundaries were digitized from the following IGN Burkina
+    Faso CARTE AU 1:200000 source map sheets:
+    1980 Tenkodogo
+    1984 Ouagadougou
+    1980 Pama
+    1985 Sikasso
+    1965 Arli
+    1975 Nielle
+    1985 Bobo-Dioulasso
+    1966 Tehini-Bouna
+    1985 Douentza
+    1972 Fada Ngourma
+    1960 Pissila
+    1969 Boulsa
+    1972 Kaya
+    1964 Banfora
+    1985 San
+    1965 Gaoua
+    1969 Ouahigouya
+    1984 Leo
+    1985 Tougan
+    1971 Dedougou
+    1985 Diapaga
+    1960 Sebba
+    1969 Gotheye
+    1985 Djibo
+    1960 Dori
+    1985 Kandi
+    1985 Kirtachi
+    1961 In Tillit
+    1965 Tera
+    1984 Koudougou
+    1971 Hounde
+    1968 Yorosso
+    1968 Po
+     
+    While digitizing, the IGN international boundaries were replaced with arcs
+    from DCW. All vertices of the international boundary match those of
+    adjacent countries. Attributes were checked for consistency with the
+    hard-copy maps distributed to the FEWS field representatives.
+     
+    The administrative boundaries for Burkina Faso were extracted from
+    the "Burkina Faso" database using the ARC/INFO command RESELECT.
+     
+    These country specific sub-national boundaries were then integrated
+    into the DCW master country database using the ARC/INFO command UPDATE.
+     
+    The country specific data set, containing all of the sub-national
+    hierarchy, was extracted from the DCW master data set using the
+    ARC/INFO command RESELECT and the third level administrative
+    units were extracted from the country specific data set using
+    the ARC/INFO command DISSOLVE.
+     
+    A master data set, based on the Digital Chart of the World (DCW)
+    PONET layer, was created.  Burkina Faso, Mali, Ethiopia, and Eritrea
+    are included in the master data set, however, these countries
+    have international boundaries that have been revised.
+     
+    The changes to Burkina Faso are:
+    The Digital Chart of the World (DCW) International boundary was used
+    for the International boundary for Burkina Faso with the only revisions
+    being those listed below.
+     
+    From : -2 degrees; 55 minutes; 8 seconds Longitude and
+    : 13 degrees;37 minutes; 37 seconds Latitude
+     
+    To : -0 degrees; 57 minutes; 41 seconds Longitude and
+    : 14 degrees; 52 minutes; 14 seconds Latitude
+     
+    AND...
+     
+    From : 0 degrees; 3 minutes; 33 seconds Longitude and
+    : 14 degrees; 58 minutes; 15 seconds Latitude
+     
+    To : 0 degrees; 13 minutes; 55 seconds Longitude and
+    : 14 degrees; 58 minutes; 15 seconds Latitude
+     
+    These changes are defined by FEWS/ARD Washington, DC, USA.
+     
+    The changes to Mali are:
+    The Digital Chart of the World (DCW) International boundary was used
+    for the International boundary for Mali with the only revisions
+    being those listed below.
+     
+    From : -2 degrees; 55 minutes; 8 seconds Longitude and
+    : 13 degrees;37 minutes; 37 seconds Latitude
+     
+    To : -0 degrees; 57 minutes; 41 seconds Longitude and
+    : 14 degrees; 52 minutes; 14 seconds Latitude
+     
+    AND...
+     
+    From : 0 degrees; 3 minutes; 33 seconds Longitude and
+    : 14 degrees; 58 minutes; 15 seconds Latitude
+     
+    To : 0 degrees; 13 minutes; 55 seconds Longitude and
+    : 14 degrees; 58 minutes; 15 seconds Latitude
+     
+     
+    These changes are defined by FEWS/ARD Washington, DC, USA.
+     
+     
+    The changes to Ethiopia are:
+    The Digital Chart of the World (DCW) International boundary was used
+    for the International boundary for Ethiopia with the only revisions
+    being those listed below.
+     
+    From :  36 degrees; 34 minutes; 5 seconds Longitude and
+    :  14 degrees; 14 minutes; 25 seconds Latitude
+     
+    To : 42 degrees; 25 minutes; 22 seconds Longitude and
+    : 12 degrees; 26 minutes; 53 seconds Latitude
+     
+    These changes are defined by FEWS/ARD Washington, DC, USA.
+     
+    The changes to Eritrea are:
+    The Digital Chart of the World (DCW) International boundary was used
+    for the International boundary of Eritrea with the only revisions
+    being those listed below:
+     
+    From : 36 degrees; 34 minutes; 5 seconds Longitude and
+    : 14 degrees; 14 minutes; 25 seconds Latitude
+     
+    To : 42 degrees; 25 minutes; 22 seconds Longitude and
+    : 12 degrees; 26 minutes; 53 seconds Latitude
+     
+    These changes are defined by FEWS/ARD Washington, DC, USA.
+     
+    The international boundary for Burkina Faso was extracted from an
+    ARC/INFO LIBRARY created from the ARC/INFO version of the Digital
+    Chart of the World (DCW) using the ARC/INFO tool LIBRARIAN.
+     
+     
+     
+    <b>Revisions</b>
+    During ARC/INFO coverage development modifications were made to the digital
+    files to generate a database with a common scale, uniform level of
+    resolution, consistent coding scheme and comparable (standardized)
+    measurement data.
+     
+    The only revision from the original data sets was the addition
+    of certain attributes.
+     
+     
+     
+     
+    <b>Reviews_Applied_to_Data</b>
+    Peer review, 03/96, FEWS/ARD Washington, D.C.
+     
+    Digital line work and attribute data checked for discrepancies and
+    approved for release to FEWS in-country and
+    regional field representatives.
+     
+     
+     
+     
+    <b>Related_Spatial_and_Tabular_Data_Sets</b>
+    None
+     
+     
+     
+     
+    <b>References_Cited</b>
+    I''Institut Geographique National (IGN) - France,  1960?,
+    "Burkina Faso,"  33 Sheets,  IGN, France.  Scale 1:200000.
+     
+    Environmental Systems Research Institute (ESRI), Inc., 1993,
+    "Digital Chart of the World (DCW),"  PONET Layer.
+    ESRI.  Redlands, CA, USA.  Scale - 1:1000000.
+     
+     
+     
+     
+     
+    <b>Notes</b>
+    USAID - United States Agency for International Development.
+    FEWS - Famine Early Warning System
+    ARD - Associates in Rural Development
+    EDC - EROS Data Center
+    USGS - United States Geological Survey
+     
+     
+     
+     
+<b><a name="section1.3">Time_Period_of_Content</a></b>
+    <b>Range_of_Dates/Times</b>
+    Beginning_Date: 1996
+    Beginning_Time: 0000
+    Ending_Date: Unknown
+    Ending_Time: 0000
+    <b>Currentness_Reference</b>
+    The "Burkina Faso" map was published in 1960?.  The sources
+    used to create this map are unknown.
+     
+    The DCW database was originally published in 1992.
+    Data currency varies from place to place depending on the
+    currency of the Operational Navigation Charts (ONC).
+    Chart currency ranged from the mid 1960s to the early 1990s.
+    Compilation dates for every ONC chart are included in the database.
+     
+    The additional attributes were added in April of 1996 by the EROS
+    Data Center (EDC).
+     
+     
+     
+     
+<b><a name="section1.4">Status</a></b>
+    <b>Progress:</b> complete
+    <b>Maintenance_and_Update_Frequency</b>
+    As needed.
+     
+     
+     
+     
+<b><a name="section1.5">Spatial_Domain</a></b>
+    <b>Bounding_Coordinates</b>
+    West_Bounding_Coordinate: -5.51891613
+    East_Bounding_Coordinate: 2.40539479
+    North_Bounding_Coordinate: 15.08259296
+    South_Bounding_Coordinate: 9.40110779
+<p>
+<b><a name="section1.6">Keywords</a></b>
+    <b>Theme</b>
+        Theme_Keyword_Thesaurus: None
+        Theme_Keyword:  Boundary
+    <b>Place</b>
+        Place_Keyword_Thesaurus: None
+        Place_Keyword:  Burkina Faso, Africa, UV, BF
+    <b>Stratum</b>
+        Stratum_Keyword_Thesaurus: None
+        Stratum_Keyword:
+    <b>Temporal</b>
+        Temporal_Keyword_Thesaurus: None
+        Temporal_Keyword:
+<p>
+<b><a name="section1.7">Access_Constraints</a></b>
+Acknowledgment of the EDC-International Program and the U.S. Geological
+Survey would be appreciated in products derived from these data.
+ 
+Although these data have been processed successfully on a computer
+system at the EROS Data Center, no warranty expressed or implied is made
+by FEWS/ARD or USGS/EDC regarding the utility of the data on any other
+system, nor shall the act of distribution constitute any such warranty.
+ 
+The Geological Survey will warrant the delivery of this product in
+computer-readable format, and will offer appropriate adjustment of
+credit when the product is determined unreadable by correctly adjusted
+computer input peripherals, or when the physical medium is delivered in
+damaged condition.  Requests for adjustment of credit must be made
+within 90 days from the date of this shipment from the ordering site.
+ 
+This data set contains data that has copyright protection and
+is not for general (public) distribution.
+ 
+ 
+ 
+ 
+<b><a name="section1.8">Use_Constraints</a></b>
+This data should not be used for navigation or for producing
+maps requiring high geodetic accuracy.
+ 
+ 
+ 
+ 
+<b><a name="section1.9">Point_of_Contact:</a></b> See <a href="#section6">Distribution_Information</a> for contact information.
+<p>
+<b><a name="section1.12">Data_Set_Credit</a></b>
+The USAID/FEWS Project and EDC International Program deserve
+credit for this data set.
+ 
+ 
+ 
+ 
+<b><a name="section1.12">Security_Information</a></b>
+    Security_Classification_System: None
+    Security_Classification:  UNCLASSIFIED
+    Security_Handling_Description: None
+<p>
+<b><a name="section1.13">Native_Data_Set_Environment:</a></b> SunOS UNIX, ARC/INFO version 8.2
+<p>
+<b>Cross_Reference</b>
+    <b>Originator:</b> 'I''Institut Geographique National (IGN) - France'
+    <b>Publication_Date:</b> 1960?
+    <b>Publication_Time:</b> 0000
+    <b>Title:</b> Burkina Faso
+    <b>Edition:</b> Unknown
+    <b>Geospatial_Data_Presentation_Form:</b> map
+    <b>Series_Information</b>
+        Series_Name: Unknown
+        Issue_Identification: None
+    <b>Publication_Information</b>
+        Publication_Place: France
+        Publisher: IGN
+    <b>Other_Citation_Details:</b> Scale-1:200000(33 Sheets)
+    <b>Online_Linkage:</b> Unknown
+    <b>Larger_Work_Citation:</b> Unknown
+<br>
+<b>Cross_Reference</b>
+    <b>Originator:</b> Environmental Systems Research Institute (ESRI), Inc.
+    <b>Publication_Date:</b> 1993
+    <b>Publication_Time:</b> 0000
+    <b>Title:</b> Digital Chart of the World (DCW), PONET Layer
+    <b>Edition:</b> Unknown
+    <b>Geospatial_Data_Presentation_Form:</b> map
+    <b>Series_Information</b>
+        Series_Name: Unknown
+        Issue_Identification: None
+    <b>Publication_Information</b>
+        Publication_Place: Redlands, CA, USA
+        Publisher: ESRI
+    <b>Other_Citation_Details:</b> Scale - 1:1000000
+    <b>Online_Linkage:</b> http://www.esri.com
+    <b>Larger_Work_Citation:</b> DCW
+<br>
+<p>
+<hr>
+<h3><a name="section2">Data_Quality_Information</a></h3>
+<b>Attribute_Accuracy</b>
+    <b>Attribute_Accuracy_Report:</b> See <a href="#section5">Entity_Attribute_Information</a>
+<p>
+    <b>Quantitative_Attribute_Accuracy_Assessment</b>
+        Attribute_Accuracy_Value:  See Explanation
+        Attribute_Accuracy_Explanation:
+           Attribute accuracy is described, where present, with each
+           attribute defined in the Entity and Attribute Section.
+<p>
+<b><a name="section2.2">Logical_Consistency_Report:</a></b> Polygon topology present.
+<p>
+<b><a name="section2.3">Completeness_Report</a></b>
+All data were found to be topologically correct. No duplicate features are
+present. All polygons are closed, and all lines intersect where intended.
+No undershoots or overshoots are present.
+ 
+To the best knowledge of USAID/FEWS and EDC the data compiled
+in this data set meets the codes and/or procedures established
+for completeness and consistency.
+ 
+ 
+ 
+ 
+<b><a name="section12.4">Positional_Accuracy </a></b>
+    <b>Horizontal_Positional_Accuracy</b>
+        Horizontal_Positional_Accuracy_Report:
+        The absolute horizontal accuracy of the DCW for all features derived
+        from Operational Navigation Charts (ONC) is 2040 meters (6700 feet)
+        World Geodetic System (WGS84).
+         
+        The absolute horizontal accuracy of the DCW for all features derived from
+        Jet Navigation Charts (JNC) is 4270 meters (14006 feet) at
+        90% Circular Error.
+         
+         
+         
+         
+<br>
+        Quantitative_Horizontal_Positional_Accuracy_Assessment:
+            Horizontal_Positional_Accuracy_Value: 2040 meters
+            Horizontal_Positional_Accuracy_Explanation:  Resolution as reported
+<br>
+    <b>Vertical_Positional_Accuracy</b>
+        Vertical_Positional_Accuracy_Report:
+        The absolute vertical accuracy of the DCW is the same as for the original
+        ONC and JNC lithographs at 90% Linear Error (LE), Mean Sea Level (MSL).
+         
+         
+         
+         
+<b><a name="section12.5">Lineage:</a></b> See <a href="#section1.2.3">Supplemental_Information</a> for overview.
+<p>
+<b>Process_Steps</b>
+    <b>Process_Step</b>
+    Process_Description: ELIMINATE AFREGIONS5U AFREGIONS5E
+    Source_Used_Citation_Abbreviation:None
+    Process_Date:  19950825 
+    Process_Time:  1036
+    Source_Produced_Citation_Abbreviation: None
+    <b>Process_Step</b>
+    Process_Description: ARCEDIT /DGM/SAB/RSMITH/PROJECTS/AFREGIONS/HORN/AFREGIONS5E
+    Source_Used_Citation_Abbreviation:None
+    Process_Date:  19950828 
+    Process_Time:  1039
+    Source_Produced_Citation_Abbreviation: None
+    <b>Process_Step</b>
+    Process_Description: BUILD AFREGIONS5E
+    Source_Used_Citation_Abbreviation:None
+    Process_Date:  19950828 
+    Process_Time:  1050
+    Source_Produced_Citation_Abbreviation: None
+    <b>Process_Step</b>
+    Process_Description: RENAME AFREGIONS5E AFREGIONS5
+    Source_Used_Citation_Abbreviation:None
+    Process_Date:  19950828 
+    Process_Time:  1107
+    Source_Produced_Citation_Abbreviation: None
+    <b>Process_Step</b>
+    Process_Description: COPY AFREGIONS5 /DG1/IPSARCH/AFRICA/ARC/AFREGIONS/COVS/AFREGIONS5
+    Source_Used_Citation_Abbreviation:None
+    Process_Date:  19950828 
+    Process_Time:  1112
+    Source_Produced_Citation_Abbreviation: None
+    <b>Process_Step</b>
+    Process_Description: EXPORT COVER AFREGIONS5 /DG1/IPSARCH/AFRICA/ARC/AFREGIONS/EXP/AFREGIONS5.E00 NON
+    Source_Used_Citation_Abbreviation:None
+    Process_Date:  19950828 
+    Process_Time:  1147
+    Source_Produced_Citation_Abbreviation: None
+    <b>Process_Step</b>
+    Process_Description: RSMITH UPDATE AFREGIONS5 /EDCSNW6/IPS2/WORK/AFSAHEL/AFSAHEL AFREGIONS5U POLY .00
+    Source_Used_Citation_Abbreviation:None
+    Process_Date:  19951129 
+    Process_Time:  1341
+    Source_Produced_Citation_Abbreviation: None
+    <b>Process_Step</b>
+    Process_Description: RSMITH RENAME AFREGIONS5U AFREGIONS5
+    Source_Used_Citation_Abbreviation:None
+    Process_Date:  19951129 
+    Process_Time:  1357
+    Source_Produced_Citation_Abbreviation: None
+    <b>Process_Step</b>
+    Process_Description: RSMITH EXPORT COVER AFREGIONS5 /EDCSNW6/IPSARCH/AFRICA/ARC/AFREGIONS/EXP/AFREGIO
+    Source_Used_Citation_Abbreviation:None
+    Process_Date:  19951130 
+    Process_Time:  1534
+    Source_Produced_Citation_Abbreviation: None
+    <b>Process_Step</b>
+    Process_Description: RSMITH RENAME AFREGIONS5 AFREGIONS5A
+    Source_Used_Citation_Abbreviation:None
+    Process_Date:  19951214 
+    Process_Time:  1406
+    Source_Produced_Citation_Abbreviation: None
+    <b>Process_Step</b>
+    Process_Description: RSMITH RENAME AFREGIONS5A AFREGIONS5
+    Source_Used_Citation_Abbreviation:None
+    Process_Date:  19951214 
+    Process_Time:  1445
+    Source_Produced_Citation_Abbreviation: None
+    <b>Process_Step</b>
+    Process_Description: RSMITH COPY AFREGIONS5 AFREG_SAFE
+    Source_Used_Citation_Abbreviation:None
+    Process_Date:  19960501 
+    Process_Time:  1101
+    Source_Produced_Citation_Abbreviation: None
+    <b>Process_Step</b>
+    Process_Description: EXTERNALALL
+    Source_Used_Citation_Abbreviation:None
+    Process_Date:  19960501 
+    Process_Time:  1103
+    Source_Produced_Citation_Abbreviation: None
+    <b>Process_Step</b>
+    Process_Description: RSMITH ARCEDIT /EDCSNW6/IPSARCH/AFRICA/ARC/AFREGIONS/COVS/AFREG_SAFE
+    Source_Used_Citation_Abbreviation:None
+    Process_Date:  19960501 
+    Process_Time:  1433
+    Source_Produced_Citation_Abbreviation: None
+    <b>Process_Step</b>
+    Process_Description: EXTERNALALL
+    Source_Used_Citation_Abbreviation:None
+    Process_Date:  19960502 
+    Process_Time:   812
+    Source_Produced_Citation_Abbreviation: None
+    <b>Process_Step</b>
+    Process_Description: RSMITH COPY /EDCSNW6/IPSARCH/AFRICA/ARC/AFREGIONS/COVS/AFREG_SAFE AFREG
+    Source_Used_Citation_Abbreviation:None
+    Process_Date:  19960509 
+    Process_Time:  1431
+    Source_Produced_Citation_Abbreviation: None
+    <b>Process_Step</b>
+    Process_Description: RSMITH COPY /EDCSNW6/IPS2/WORK/AFREGIONS/AFREG AFFEWSADMIN
+    Source_Used_Citation_Abbreviation:None
+    Process_Date:  19960509 
+    Process_Time:  1536
+    Source_Produced_Citation_Abbreviation: None
+    <b>Process_Step</b>
+    Process_Description: RSMITH COPY /EDCSNW6/IPSARCH/AFRICA/ARC/AFREGIONS/COVS/AFFEWSADMIN AFFEWSADMIN
+    Source_Used_Citation_Abbreviation:None
+    Process_Date:  19960509 
+    Process_Time:  1604
+    Source_Produced_Citation_Abbreviation: None
+    <b>Process_Step</b>
+    Process_Description: RSMITH RESELECT AFFEWSADMIN UVADMIN POLY
+    Source_Used_Citation_Abbreviation:None
+    Process_Date:  19960510 
+    Process_Time:   836
+    Source_Produced_Citation_Abbreviation: None
+    <b>Process_Step</b>
+    Process_Description: RSMITH RENAME UVADMIN UVADMIN3
+    Source_Used_Citation_Abbreviation:None
+    Process_Date:  19960510 
+    Process_Time:  1024
+    Source_Produced_Citation_Abbreviation: None
+    <b>Process_Step</b>
+    Process_Description: WALKES IMPORT COVER UVADMIN3.E00 /EDCSNW6/IPS2/WALKES/WORK/AFADMIN/SAHEL/UV/COVS
+    Source_Used_Citation_Abbreviation:None
+    Process_Date:  19960801 
+    Process_Time:   922
+    Source_Produced_Citation_Abbreviation: None
+    <b>Process_Step</b>
+    Process_Description: WALKES PROJECT COVER UVADMIN3 UVADMIN3P /EDCSNW6/IPS2/WALKES/WORK/PRJ/GEO2GEO.PR
+    Source_Used_Citation_Abbreviation:None
+    Process_Date:  19960801 
+    Process_Time:   924
+    Source_Produced_Citation_Abbreviation: None
+    <b>Process_Step</b>
+    Process_Description: WALKES BUILD UVADMIN3P
+    Source_Used_Citation_Abbreviation:None
+    Process_Date:  19960801 
+    Process_Time:   924
+    Source_Produced_Citation_Abbreviation: None
+    <b>Process_Step</b>
+    Process_Description: WALKES   DOCUMENT UVADMIN3P COPY   /EDCSNW6/IPS2/WALKES/WORK/AFADMIN/SAHEL/GA/CO
+    Source_Used_Citation_Abbreviation:None
+    Process_Date:  19960801 
+    Process_Time:   936
+    Source_Produced_Citation_Abbreviation: None
+    <b>Process_Step</b>
+    Process_Description: WALKES   DOCUMENT UVADMIN3P UPDATE WALKES
+    Source_Used_Citation_Abbreviation:None
+    Process_Date:  19960801 
+    Process_Time:  1016
+    Source_Produced_Citation_Abbreviation: None
+    <b>Process_Step</b>
+    Process_Description: WALKES   DOCUMENT UVADMIN3P UPDATE WALKES
+    Source_Used_Citation_Abbreviation:None
+    Process_Date:  19960801 
+    Process_Time:  1104
+    Source_Produced_Citation_Abbreviation: None
+    <b>Process_Step</b>
+    Process_Description: WALKES EXPORT COVER UVADMIN3P /EDCSNW6/IPS2/WALKES/WORK/AFADMIN/SAHEL/UV/RON/UVA
+    Source_Used_Citation_Abbreviation:None
+    Process_Date:  19960814 
+    Process_Time:  1440
+    Source_Produced_Citation_Abbreviation: None
+    <b>Process_Step</b>
+    Process_Description: WALKES   DOCUMENT UVADMIN3P UPDATE WALKES
+    Source_Used_Citation_Abbreviation:None
+    Process_Date:  19960916 
+    Process_Time:  1537
+    Source_Produced_Citation_Abbreviation: None
+    <b>Process_Step</b>
+    Process_Description: WALKES EXPORT COVER UVADMIN3P /EDCSNW6/IPS2/WALKES/WORK/AFADMIN/SAHEL/UV/RON/UVA
+    Source_Used_Citation_Abbreviation:None
+    Process_Date:  19960916 
+    Process_Time:  1618
+    Source_Produced_Citation_Abbreviation: None
+    <b>Process_Step</b>
+    Process_Description: WALKES   DOCUMENT UVADMIN3P UPDATE WALKES
+    Source_Used_Citation_Abbreviation:None
+    Process_Date:  19961024 
+    Process_Time:  1523
+    Source_Produced_Citation_Abbreviation: None
+    <b>Process_Step</b>
+    Process_Description: WALKES   DOCUMENT UVADMIN3P UPDATE WALKES
+    Source_Used_Citation_Abbreviation:None
+    Process_Date:  19961024 
+    Process_Time:  1534
+    Source_Produced_Citation_Abbreviation: None
+    <b>Process_Step</b>
+    Process_Description: WALKES   DOCUMENT UVADMIN3P UPDATE WALKES
+    Source_Used_Citation_Abbreviation:None
+    Process_Date:  19961025 
+    Process_Time:   824
+    Source_Produced_Citation_Abbreviation: None
+    <b>Process_Step</b>
+    Process_Description: WALKES EXPORT COVER UVADMIN3P /EDCSNW6/IPS2/WALKES/WORK/AFADMIN/SAHEL/UV/RON/UVA
+    Source_Used_Citation_Abbreviation:None
+    Process_Date:  19961025 
+    Process_Time:   830
+    Source_Produced_Citation_Abbreviation: None
+    <b>Process_Step</b>
+    Process_Description: WALKES   DOCUMENT UVADMIN3P UPDATE WALKES
+    Source_Used_Citation_Abbreviation:None
+    Process_Date:  19961029 
+    Process_Time:   930
+    Source_Produced_Citation_Abbreviation: None
+    <b>Process_Step</b>
+    Process_Description: WALKES   IMPORT COVER UVADMIN3P.E00 UVADMIN3
+    Source_Used_Citation_Abbreviation:None
+    Process_Date:  19970107 
+    Process_Time:  1028
+    Source_Produced_Citation_Abbreviation: None
+    <b>Process_Step</b>
+    Process_Description: WALKES   COPY UVADMIN3 UVADMN3
+    Source_Used_Citation_Abbreviation:None
+    Process_Date:  19970107 
+    Process_Time:  1029
+    Source_Produced_Citation_Abbreviation: None
+    <b>Process_Step</b>
+    Process_Description: WALKES   DOCUMENT UVADMN3 DELETE WALKES
+    Source_Used_Citation_Abbreviation:None
+    Process_Date:  19970107 
+    Process_Time:  1029
+    Source_Produced_Citation_Abbreviation: None
+    <b>Process_Step</b>
+    Process_Description: WALKES   DOCUMENT UVADMN3 COPY   /EDCSNW6/IPS2/WALKES/WORK/FEWS_CNT_ADMIN_LOGGER
+    Source_Used_Citation_Abbreviation:None
+    Process_Date:  19970107 
+    Process_Time:  1030
+    Source_Produced_Citation_Abbreviation: None
+    <b>Process_Step</b>
+    Process_Description: WALKES   DOCUMENT UVADMN3 UPDATE WALKES
+    Source_Used_Citation_Abbreviation:None
+    Process_Date:  19970107 
+    Process_Time:  1031
+    Source_Produced_Citation_Abbreviation: None
+    <b>Process_Step</b>
+    Process_Description: WALKES IMPORT COVER /DG1/SAB1/WALKES/WORK/AFADMN/SAHEL/E00/UVADMN3.E00 UVADMN3
+    Source_Used_Citation_Abbreviation:None
+    Process_Date:  19970414 
+    Process_Time:  1304
+    Source_Produced_Citation_Abbreviation: None
+    <b>Process_Step</b>
+    Process_Description: WALKES   DOCUMENT UVADMN3 UPDATE WALKES
+    Source_Used_Citation_Abbreviation:None
+    Process_Date:  19970414 
+    Process_Time:  1322
+    Source_Produced_Citation_Abbreviation: None
+    <b>Process_Step</b>
+    Process_Description: WALKES   DOCUMENT UVADMN3 UPDATE WALKES
+    Source_Used_Citation_Abbreviation:None
+    Process_Date:  19970415 
+    Process_Time:  1359
+    Source_Produced_Citation_Abbreviation: None
+    <b>Process_Step</b>
+    Process_Description: RSMITH COPY /DG1/SAB1/WALKES/WORK/AFADMN/SAHEL/UV/COVS/UVADMN3 UVADMN3
+    Source_Used_Citation_Abbreviation:None
+    Process_Date:  19970508 
+    Process_Time:  1606
+    Source_Produced_Citation_Abbreviation: None
+    <b>Process_Step</b>
+    Process_Description: RSMITH ARCEDIT /EDCSNW6/FEWSARCH/METADATA_ADMN_UPD/UVADMN3
+    Source_Used_Citation_Abbreviation:None
+    Process_Date:  19970521 
+    Process_Time:  1047
+    Source_Produced_Citation_Abbreviation: None
+    <b>Process_Step</b>
+    Process_Description: RSMITH BUILD UVADMN3
+    Source_Used_Citation_Abbreviation:None
+    Process_Date:  19970521 
+    Process_Time:  1048
+    Source_Produced_Citation_Abbreviation: None
+    <b>Process_Step</b>
+    Process_Description: RSMITH   EXPORT COVER UVADMN3 /EDCSNW6/FEWSARCH/METADATA_ADMN_UPD/EXP/UVADMN3.E0
+    Source_Used_Citation_Abbreviation:None
+    Process_Date:  19970521 
+    Process_Time:  1147
+    Source_Produced_Citation_Abbreviation: None
+    <b>Process_Step</b>
+    Process_Description: RSMITH   COPY UVADMN3 /EDCSNW6/FEWSARCH/COUNTRY/UV/UVCOVS/UVADMN3
+    Source_Used_Citation_Abbreviation:None
+    Process_Date:  19970521 
+    Process_Time:  1335
+    Source_Produced_Citation_Abbreviation: None
+<p>
+<b><a name="section12.5">Cloud_Cover</a></b>
+0
+ 
+ 
+<hr>
+<h3><a name="section3">Spatial_Data_Organization_Information</a></h3>
+<b><a name="section3.2">Direct_Spatial_Reference_Method:</b> Vector</a>
+<br>
+<b>Point_and_Vector_Object_Information</b>
+    <b>SDTS_Terms_Description</b>
+        SDTS_Point_and_Vector_Object_Type: Point
+        Point_and_Vector_Object_Count: 301
+        SDTS_Point_and_Vector_Object_Type: String
+        Point_and_Vector_Object_Count: 953
+        SDTS_Point_and_Vector_Object_Type: GT-polygon composed of chains'
+        Point_and_Vector_Object_Count:  302
+<p>
+<hr>
+<h3><a name="section4">Spatial_Reference_Information </a></h3>
+<b><a name="section4.1">Horizontal_Coordinate_System_Definition </a></b>
+<pre>
+    <b>Geographic</b>
+        Latitude_Resolution:
+        Longitude_Resolution:
+        Geographic_Coordinate_Units:  Decimal Degrees
+    <b>Geodetic Model</b>
+        Horizontal_Datum_Name:
+        Ellipsoid_Name:  CLARKE1880
+<p>
+<hr>
+<h3><a name="section5">Entity_and_Attribute_Information </a></h3>
+<b><a name="section5.1">Detailed_Description </a></b>
+    <b>Entity_Type</b>
+    <b>Entity_Type_Label:</b> UVADMN3.PAT
+    <b>Entity_Type_Definition:</b> Polygon Attribute Table
+    <b>Entity_Type_Definition_Source:</b> FEWS/ARD Washington, DC, USA
+    <b>Attribute:</b>
+        Attribute_Label: -
+        Attribute_Definition: Polygon Attribute Table
+        Attribute_Definition_Source: FEWS/ARD Washington, DC, USA
+        Attribute_Domain_Values
+            Enumerated_Domain
+                Enumerated_Domain_Value: Relational database table
+                Enumerated_Domain_Value_Definition
+                Enumerated_Domain_Value_Definition_Source:
+    <b>Attribute:</b>
+        Attribute_Label: AREA
+        Attribute_Definition: Area of poly/region in square coverage units
+        Attribute_Definition_Source: Computed
+        Attribute_Domain_Values
+            Enumerated_Domain
+                Enumerated_Domain_Value: Positive real numbers
+                Enumerated_Domain_Value_Definition
+                Enumerated_Domain_Value_Definition_Source:
+    <b>Attribute:</b>
+        Attribute_Label: PERIMETER
+        Attribute_Definition: Perimeter of poly/region in coverage units
+        Attribute_Definition_Source: Computed
+        Attribute_Domain_Values
+            Enumerated_Domain
+                Enumerated_Domain_Value: Positive real numbers
+                Enumerated_Domain_Value_Definition
+                Enumerated_Domain_Value_Definition_Source:
+    <b>Attribute:</b>
+        Attribute_Label: UVADMN3#
+        Attribute_Definition: Internal feature number
+        Attribute_Definition_Source: Computed
+        Attribute_Domain_Values
+            Enumerated_Domain
+                Enumerated_Domain_Value: Sequential unique positive integer
+                Enumerated_Domain_Value_Definition
+                Enumerated_Domain_Value_Definition_Source:
+    <b>Attribute:</b>
+        Attribute_Label: UVADMN3-ID
+        Attribute_Definition: User-assigned feature number
+        Attribute_Definition_Source: User-defined
+        Attribute_Domain_Values
+            Enumerated_Domain
+                Enumerated_Domain_Value: Integer
+                Enumerated_Domain_Value_Definition
+                Enumerated_Domain_Value_Definition_Source:
+    <b>Attribute:</b>
+        Attribute_Label: ID
+        Attribute_Definition: Unique administrative unit code
+        Attribute_Definition_Source: FEWS/ARD
+        Attribute_Domain_Values
+            Enumerated_Domain
+                Enumerated_Domain_Value: Character
+                Enumerated_Domain_Value_Definition
+                Enumerated_Domain_Value_Definition_Source:
+    <b>Attribute:</b>
+        Attribute_Label: CNT-ABB
+        Attribute_Definition: Unique country abbreviation
+        Attribute_Definition_Source: Federal Information Processing Standard (FIPS)
+        Attribute_Domain_Values
+            Enumerated_Domain
+                Enumerated_Domain_Value: Character
+                Enumerated_Domain_Value_Definition
+                Enumerated_Domain_Value_Definition_Source:
+    <b>Attribute:</b>
+        Attribute_Label: ADMIN2
+        Attribute_Definition: Second level administrative unit names
+        Attribute_Definition_Source: FEWS/ARD
+        Attribute_Domain_Values
+            Enumerated_Domain
+                Enumerated_Domain_Value: Character
+                Enumerated_Domain_Value_Definition
+                Enumerated_Domain_Value_Definition_Source:
+    <b>Attribute:</b>
+        Attribute_Label: ADMIN3
+        Attribute_Definition: Third level administrative unit names
+        Attribute_Definition_Source: FEWS/ARD
+        Attribute_Domain_Values
+            Enumerated_Domain
+                Enumerated_Domain_Value: Character
+                Enumerated_Domain_Value_Definition
+                Enumerated_Domain_Value_Definition_Source:
+    <b>Attribute:</b>
+        Attribute_Label: NUM-CODE
+        Attribute_Definition: Unique numeric administrative unit identifier
+        Attribute_Definition_Source: EROS Data Center (EDC)
+        Attribute_Domain_Values
+            Enumerated_Domain
+                Enumerated_Domain_Value: Character
+                Enumerated_Domain_Value_Definition
+                Enumerated_Domain_Value_Definition_Source:
+    <b>Attribute:</b>
+        Attribute_Label: REGION
+        Attribute_Definition: ARD defined region in Africa that Burkina Faso is associated with
+        Attribute_Definition_Source: FEWS/ARD
+        Attribute_Domain_Values
+            Enumerated_Domain
+                Enumerated_Domain_Value: Character
+                Enumerated_Domain_Value_Definition
+                Enumerated_Domain_Value_Definition_Source:
+    <b>Attribute:</b>
+        Attribute_Label: FEWS-ABB
+        Attribute_Definition: Unique country abbreviation
+        Attribute_Definition_Source: FEWS/ARD
+        Attribute_Domain_Values
+            Enumerated_Domain
+                Enumerated_Domain_Value: Character
+                Enumerated_Domain_Value_Definition
+                Enumerated_Domain_Value_Definition_Source:
+    <b>Attribute:</b>
+        Attribute_Label: FEWSID
+        Attribute_Definition: Unique administrative unit identifier
+        Attribute_Definition_Source: FEWS/ARD
+        Attribute_Domain_Values
+            Enumerated_Domain
+                Enumerated_Domain_Value: Character
+                Enumerated_Domain_Value_Definition
+                Enumerated_Domain_Value_Definition_Source:
+    <b>Attribute:</b>
+        Attribute_Label: FEWSID2
+        Attribute_Definition: Unique identifier for the second level administrative units
+        Attribute_Definition_Source: FEWS/ARD
+        Attribute_Domain_Values
+            Enumerated_Domain
+                Enumerated_Domain_Value: Character
+                Enumerated_Domain_Value_Definition
+                Enumerated_Domain_Value_Definition_Source:
+    <b>Attribute:</b>
+        Attribute_Label: FEWSID3
+        Attribute_Definition: Unique identifier for the third level administrative units
+        Attribute_Definition_Source: FEWS/ARD
+        Attribute_Domain_Values
+            Enumerated_Domain
+                Enumerated_Domain_Value: Character
+                Enumerated_Domain_Value_Definition
+                Enumerated_Domain_Value_Definition_Source:
+<p>
+<b><a name="section5.2"> Overview_Description </a></b>
+    <b><a name="section5.2.1">Entity_and_Attribute_Overview </a></b>
+     
+    The item (ID) defines the unique administrative unit code,
+    as defined by FEWS/ARD.
+    The item (CNT-ABB) defines the unique country abbreviation,
+    as defined by EDC.
+    The item (ADMIN2) defines the second level administrative
+    unit names, as defined by FEWS/ARD.
+    The item (ADMIN3) defines the third level administrative
+    unit names, as defined by FEWS/ARD.
+    The item (NUM-CODE) defines the unique numeric administrative
+    unit identifier, as defined by EDC.
+    The item (REGION) defines the African region that Burkina Faso
+    is associated with, as defined by FEWS/ARD.
+    The item (FEWS-ABB) defines the unique country abbreviation,
+    as defined by FEWS/ARD.
+    The item (FEWSID) defines the unique administrative unit
+    identifier, as defined by FEWS/ARD.
+    The item (FEWSID2) defines the unique identifiers for the
+    second level administrative units, as defined by FEWS/ARD.
+    The item (FEWSID3) defines the unique identifiers for the
+    third level administrative units, as defined by FEWS/ARD.
+     
+    ID....................N/A
+    CNT-ABB...............UV
+    ADMIN2................see UVADMN2
+    NUM-CODE..............N/A
+    REGION................Sahel
+    FEWS-ABB..............BF
+    FEWSID................N/A
+    FEWSID2...............see UVADMN2
+     
+    ADMIN3                    FEWSID3
+     
+    ABSOUYA                   BF3ABSOUYA
+    ANDEMTENGA                BF3ANDEMTENGA
+    ARBOLLE                   BF3ARBOLLE
+    ARIBINDA                  BF3ARIBINDA
+    BADEMA                    BF3BADEMA
+    BAGARE                    BF3BAGARE
+    BAGASSI                   BF3BAGASSI
+    BALAVE                    BF3BALAVE
+    BAMA                      BF3BAMA
+    BANA                      BF3BANA
+    BANE                      BF3BANE
+    BANFORA                   BF3BANFORA
+    BANH                      BF3BANH
+    BANI                      BF3BANI
+    BARABOULE                 BF3BARABOULE
+    BARANI                    BF3BARANI
+    BARSALOGHO                BF3BARSALOGHO
+    BASKOURE                  BF3BASKOURE
+    BASSI                     BF3BASSI
+    BATIE                     BF3BATIE
+    BEGUEDO                   BF3BEGUEDO
+    BEKUY                     BF3BEKUY
+    BERE                      BF3BERE
+    BEREBA                    BF3BEREBA
+    BEREGADOUGOU              BF3BEREGADOUGOU
+    BIEHA                     BF3BIEHA
+    BILANGA                   BF3BILANGA
+    BINDE                     BF3BINDE
+    BINGO                     BF3BINGO
+    BITTOU                    BF3BITTOU
+    BOBO-DIOULASSO            BF3BOBO-DIOULASSO
+    BOGANDE                   BF3BOGANDE
+    BOKIN                     BF3BOKIN
+    BOMBOROKUI                BF3BOMBOROKUI
+    BONDOKUI                  BF3BONDOKUI
+    BOROMO                    BF3BOROMO
+    BOTOU                     BF3BOTOU
+    BOUDRY                    BF3BOUDRY
+    BOUGNOUNOU                BF3BOUGNOUNOU
+    BOULSA                    BF3BOULSA
+    BOURA                     BF3BOURA
+    BOUROUM                   BF3BOUROUM
+    BOUROUM-BOUROUM           BF3BOUROUM-BOUROUM
+    BOURZANGA                 BF3BOURZANGA
+    BOUSSE                    BF3BOUSSE
+    BOUSSOU                   BF3BOUSSOU
+    BOUSSOUMA                 BF3BOUSSOUMA
+    CASSOU                    BF3CASSOU
+    COMIN-YANGA               BF3COMIN-YANGA
+    DABLO                     BF3DABLO
+    DAKORO                    BF3DAKORO
+    DANO                      BF3DANO
+    DAPELGO                   BF3DAPELGO
+    DARGO                     BF3DARGO
+    DASSA                     BF3DASSA
+    DEDOUGOU                  BF3DEDOUGOU
+    DEOU                      BF3DEOU
+    DI                        BF3DI
+    DIABO                     BF3DIABO
+    DIALGAYE                  BF3DIALGAYE
+    DIAPAGA                   BF3DIAPAGA
+    DIAPANGOU                 BF3DIAPANGOU
+    DIDYR                     BF3DIDYR
+    DIEBOUGOU                 BF3DIEBOUGOU
+    DIGUEL                    BF3DIGUEL
+    DISSIN                    BF3DISSIN
+    DJIBASSO                  BF3DJIBASSO
+    DJIBO                     BF3DJIBO
+    DJIGOUE                   BF3DJIGOUE
+    DJIGOUERA                 BF3DJIGOUERA
+    DOKUI                     BF3DOKUI
+    DOLO                      BF3DOLO
+    DORI                      BF3DORI
+    DOULOUGOU                 BF3DOULOUGOU
+    DOUMBALA                  BF3DOUMBALA
+    DOUNA                     BF3DOUNA
+    DOURTENGA                 BF3DOURTENGA
+    FADA N'GOURMA             BF3FADA N'GOURMA
+    FALAGOUNTOU               BF3FALAGOUNTOU
+    FARA                      BF3FARA
+    FO                        BF3FO
+    FOUNZAN                   BF3FOUNZAN
+    GAOUA                     BF3GAOUA
+    GARANGO                   BF3GARANGO
+    GASSAN                    BF3GASSAN
+    GAYERI                    BF3GAYERI
+    GBOMBLORA                 BF3GBOMBLORA
+    GNIARO                    BF3GNIARO
+    GODYR                     BF3GODYR
+    GOGO                      BF3GOGO
+    GOMBORO                   BF3GOMBORO
+    GOMBOUSSOUGOU             BF3GOMBOUSSOUGOU
+    GOMPONSOM                 BF3GOMPONSOM
+    GORGADJI                  BF3GORGADJI
+    GOROM-GOROM               BF3GOROM-GOROM
+    GOSSINA                   BF3GOSSINA
+    GOUNGHIN                  BF3GOUNGHIN
+    GOURCY                    BF3GOURCY
+    GUEGUERE                  BF3GUEGUERE
+    GUIBA                     BF3GUIBA
+    GUIBARE                   BF3GUIBARE
+    HOUNDE                    BF3HOUNDE
+    IMASGHO                   BF3IMASGHO
+    IPELCE                    BF3IPELCE
+    KADIOGO                   BF3KADIOGO
+    KAIN                      BF3KAIN
+    KALSAKA                   BF3KALSAKA
+    KAMPTI                    BF3KAMPTI
+    KANDO                     BF3KANDO
+    KANKALABA                 BF3KANKALABA
+    KANTCHARI                 BF3KANTCHARI
+    KARANKASSO-VIGUE          BF3KARANKASSO-VIGUE
+    KASSOUM                   BF3KASSOUM
+    KAYA                      BF3KAYA
+    KAYAO                     BF3KAYAO
+    KHYON                     BF3KHYON
+    KIEMBARA                  BF3KIEMBARA
+    KINDI                     BF3KINDI
+    KIRSI                     BF3KIRSI
+    KOALLA                    BF3KOALLA
+    KOGHO                     BF3KOGHO
+    KOKOLOGHO                 BF3KOKOLOGHO
+    KOLOKO                    BF3KOLOKO
+    KOMBISSIRI                BF3KOMBISSIRI
+    KOMBORI                   BF3KOMBORI
+    KOMSILGA                  BF3KOMSILGA
+    KOMTOEGA                  BF3KOMTOEGA
+    KONA                      BF3KONA
+    KONGOUSSI                 BF3KONGOUSSI
+    KONKI-IPALA               BF3KONKI-IPALA
+    KOPER                     BF3KOPER
+    KORDIE                    BF3KORDIE
+    KORSIMORO                 BF3KORSIMORO
+    KOTI                      BF3KOTI
+    KOUBRI                    BF3KOUBRI
+    KOUDOUGOU                 BF3KOUDOUGOU
+    KOUGNY                    BF3KOUGNY
+    KOUKA                     BF3KOUKA
+    KOUMBIA                   BF3KOUMBIA
+    KOUMBRI                   BF3KOUMBRI
+    KOUPELA                   BF3KOUPELA
+    KOURIGNON                 BF3KOURIGNON
+    KOUROUMA                  BF3KOUROUMA
+    KOUTOUGOU                 BF3KOUTOUGOU
+    KPUERE                    BF3KPUERE
+    LA-TODIN                  BF3LA-TODIN
+    LALGAYE                   BF3LALGAYE
+    LANFIERA                  BF3LANFIERA
+    LANKOUE                   BF3LANKOUE
+    LAYE                      BF3LAYE
+    LEGMOIN                   BF3LEGMOIN
+    LENA                      BF3LENA
+    LEO                       BF3LEO
+    LIPTOUGOU                 BF3LIPTOUGOU
+    LOGOBOU                   BF3LOGOBOU
+    LOROPENI                  BF3LOROPENI
+    LOUMANA                   BF3LOUMANA
+    LOUMBILA                  BF3LOUMBILA
+    MADOUBA                   BF3MADOUBA
+    MALBA                     BF3MALBA
+    MANE                      BF3MANE
+    MANGA                     BF3MANGA
+    MANGODARA                 BF3MANGODARA
+    MANNI                     BF3MANNI
+    MARKOYE                   BF3MARKOYE
+    MATIACOALI                BF3MATIACOALI
+    MEGUET                    BF3MEGUET
+    MIDEBDO                   BF3MIDEBDO
+    MOGTEDO                   BF3MOGTEDO
+    MOROLABA                  BF3MOROLABA
+    MOUSSODOUGOU              BF3MOUSSODOUGOU
+    N'DOROLA                  BF3N'DOROLA
+    NAKO                      BF3NAKO
+    NAMISSIGUIMA              BF3NAMISSIGUIMA
+    NAMOUNOU                  BF3NAMOUNOU
+    NANORO                    BF3NANORO
+    NASSAMFOU                 BF3NASSAMFOU
+    NEBIELIANAYOU             BF3NEBIELIANAYOU
+    NIABOURI                  BF3NIABOURI
+    NIAGHO                    BF3NIAGHO
+    NIANGOLOKO                BF3NIANGOLOKO
+    NIANKORODOUGOU            BF3NIANKORODOUGOU
+    NIEGO                     BF3NIEGO
+    NIOU                      BF3NIOU
+    NOBERE                    BF3NOBERE
+    NOUNA                     BF3NOUNA
+    ORODARA                   BF3ORODARA
+    ORONKUA                   BF3ORONKUA
+    OUAHIGOUYA                BF3OUAHIGOUYA
+    OUARGAYE                  BF3OUARGAYE
+    OUARKOYE                  BF3OUARKOYE
+    OUELENI                   BF3OUELENI
+    OUESSA                    BF3OUESSA
+    OUINDIGUI                 BF3OUINDIGUI
+    OULA                      BF3OULA
+    OUO                       BF3OUO
+    OURSI                     BF3OURSI
+    OURY                      BF3OURY
+    PA                        BF3PA
+    PABRE                     BF3PABRE
+    PAMA                      BF3PAMA
+    PARTIAGA                  BF3PARTIAGA
+    PELLA                     BF3PELLA
+    PENI                      BF3PENI
+    PENSA                     BF3PENSA
+    PERIGBAN                  BF3PERIGBAN
+    PIBAORE                   BF3PIBAORE
+    PIELA                     BF3PIELA
+    PILIMPIKOU                BF3PILIMPIKOU
+    PISSILA                   BF3PISSILA
+    PO                        BF3PO
+    POA                       BF3POA
+    POBE-MENGAO               BF3POBE-MENGAO
+    POUNI                     BF3POUNI
+    POURA                     BF3POURA
+    POUYTENGA                 BF3POUYTENGA
+    RAMBO                     BF3RAMBO
+    RAMONGO                   BF3RAMONGO
+    REO                       BF3REO
+    ROLLO                     BF3ROLLO
+    SAABA                     BF3SAABA
+    SABCE                     BF3SABCE
+    SABOU                     BF3SABOU
+    SAFANE                    BF3SAFANE
+    SAMBA                     BF3SAMBA
+    SAMI                      BF3SAMI
+    SAMOGHOHIRI               BF3SAMOGHOHIRI
+    SAMOROGOUAN               BF3SAMOROGOUAN
+    SAMPELGA                  BF3SAMPELGA
+    SANABA                    BF3SANABA
+    SANGHA                    BF3SANGHA
+    SAPONE                    BF3SAPONE
+    SAPOUY                    BF3SAPOUY
+    SATIRI                    BF3SATIRI
+    SEBBA                     BF3SEBBA
+    SEGUENEGA                 BF3SEGUENEGA
+    SEYTENGA                  BF3SEYTENGA
+    SIDERADOUGOU              BF3SIDERADOUGOU
+    SIGLE                     BF3SIGLE
+    SILLY                     BF3SILLY
+    SINDOU                    BF3SINDOU
+    SOLENZO                   BF3SOLENZO
+    SOLLE                     BF3SOLLE
+    SOUBAKANIEDOUGOU          BF3SOUBAKANIEDOUGOU
+    SOUDOUGUI                 BF3SOUDOUGUI
+    SOURGOU                   BF3SOURGOU
+    SOURGOUBILA               BF3SOURGOUBILA
+    TAMBAGA                   BF3TAMBAGA
+    TANGAYE                   BF3TANGAYE
+    TANGHIN-DASSOURI          BF3TANGHIN-DASSOURI
+    TANSARGA                  BF3TANSARGA
+    TANSILA                   BF3TANSILA
+    TCHERIBA                  BF3TCHERIBA
+    TENADO                    BF3TENADO
+    TENKODOGO                 BF3TENKODOGO
+    TENSOBTENGA               BF3TENSOBTENGA
+    THION                     BF3THION
+    THIOU                     BF3THIOU
+    THYOU                     BF3THYOU
+    TIANKOURA                 BF3TIANKOURA
+    TIBGA                     BF3TIBGA
+    TIEBELE                   BF3TIEBELE
+    TIEFORA                   BF3TIEFORA
+    TIKARE                    BF3TIKARE
+    TIN-AKOF                  BF3TIN-AKOF
+    TITAO                     BF3TITAO
+    TO                        BF3TO
+    TOECE                     BF3TOECE
+    TOEGHIN                   BF3TOEGHIN
+    TOENI                     BF3TOENI
+    TOMA                      BF3TOMA
+    TONGOMAYEL                BF3TONGOMAYEL
+    TOUGAN                    BF3TOUGAN
+    TOUGO                     BF3TOUGO
+    TOUGOURI                  BF3TOUGOURI
+    TOUSSIANA                 BF3TOUSSIANA
+    WOLONKOTO                 BF3WOLONKOTO
+    YABA                      BF3YABA
+    YAHO                      BF3YAHO
+    YAKO                      BF3YAKO
+    YALGO                     BF3YALGO
+    YAMBA                     BF3YAMBA
+    YARGATENGA                BF3YARGATENGA
+    YARGO                     BF3YARGO
+    YE                        BF3YE
+    YONDE                     BF3YONDE
+    ZABRE                     BF3ZABRE
+    ZAM                       BF3ZAM
+    ZAMBO                     BF3ZAMBO
+    ZAWARA                    BF3ZAWARA
+    ZECCO                     BF3ZECCO
+    ZEGUEDEGUIN               BF3ZEGUEDEGUIN
+    ZIGA                      BF3ZIGA
+    ZINIARE                   BF3ZINIARE
+    ZIOU                      BF3ZIOU
+    ZITENGA                   BF3ZITENGA
+    ZOGORE                    BF3ZOGORE
+    ZORGHO                    BF3ZORGHO
+    ZOUNGOU                   BF3ZOUNGOU
+     
+     
+     
+     
+    <b>Entity_and_Attribute_Detail_Citation:</b> Not Available
+<p>
+<hr>
+<h3><a name="section6">Distribution_Information </a></h3>
+<pre>
+ 
+<hr>
+<h3><a name="section7">Metadata_Reference_Section</a></h3>
+Metadata_Date: 19970415
+Metadata_Contact:
+ 
+Metadata_Standard_Name: FGDC Content Standards for Digital Geospatial Metadata
+Metadata_Standard_Version:  19940608
+Metadata_Time_Convention:  Local Time
+Metadata_Security_Information:
+    Metadata_Security_Classification_System:  None
+    Metadata_Security_Classification:  UNCLASSIFIED
+    Metadata_Security_Handling_Description:  None
+</pre>
+<hr>
+Last modified: 03-03-04.10:39:11.Tue
+</body>
+</html>

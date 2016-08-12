@@ -1,0 +1,894 @@
+<html>
+<head>
+<title> FGDC Metadata for WAADMN2 </title>
+</head>
+<body>
+
+<h1>
+Metadata for WAADMN2 <p>
+</h1>
+<pre>
+<h3><a name="TOC"> Table of Contents </a></h3>
+<pre>
+<a href="#section1">Identification_Information</a>
+     <a href="#section1.2.1">Abstract </a>
+     <a href="#section1.2.2">Purpose </a>
+     <a href="#section1.2.3">Supplemental Information </a>
+<a href="#section2">Data_Quality_Information</a>
+<a href="#section3">Spatial_Data_Organization_Information</a>
+<a href="#section5">Entity_and_Attribute_Information</a>
+     <a href="#section5">Detailed Description</a>
+     <a href="#section5.2.1">Overview </a>
+<a href="#section6">Distribution_Information</a>
+<a href="#section7">Metadata_Reference_Section</a><p>
+<hr>
+<h3><a name="section1">Identification_Information </a></h3>
+<b><a name="section1.1">Citation_Information </a></b>
+    <b>Originator:</b> USAID / FEWS
+    <b>Publication_Date:</b> 1996
+    <b>Publication_Time:</b> 0000
+    <b>Title:</b> WAADMN2
+    <b>Edition:</b> 1
+    <b>Geospatial_Data_Presentation_Format:</b> map
+    <b>Series_Information</b>
+        Series_Name: FEWS 3
+        Issue_Identification: 1
+    <b>Publication_Information</b>
+        Publication_Place: Sioux Falls, SD, USA
+        Publisher: EDC/International Program
+    <b>Other_Citation_Details:</b> FEWS/EROS Data Center (EDC)
+    <b>Online_Linkage:</b> http://edcintl.cr.usgs.gov/adds/adds.html
+    <b>Larger_Work_Citation:</b> None
+<p>
+<b><a name="section1.2">Description </a></b> 
+    <b><a name="section1.2.1">Abstract</a></b>
+    This ARC/INFO polygon coverage contains the second level
+    administrative boundaries at a 1:1000000 scale.
+     
+    The coverage is part of the Famine Early Warning System (FEWS) /
+    Associates in Rural Development (ARD) African series.
+     
+    Namibia is associated with the South region of Africa.
+     
+     
+     
+    Keywords:
+    Boundary, Namibia, WA, NB,
+    South Region, Africa
+     
+     
+     
+     
+    <b><a name="section1.2.2">Purpose</a></b>
+    This data set is to be used in conjunction with other
+    layers of Namibia data.  The data are intended
+    to show the spatial distribution of the administrative
+    units for Namibia.
+     
+    The data are to be used in modeling, targeting and
+    demonstration projects.  The data are also used in
+    natural resource management, inventory, change analysis,
+    policy making, environmental awareness and land use
+    planning.
+     
+     
+     
+     
+<b><a name="section1.2.3">Supplemental_Information</b>
+    <b>Procedures_Used</b>
+    The administrative boundaries for Namibia were extracted from the
+    MRPDA database using the ARC/INFO command RESELECT.
+     
+    These country specific sub-national boundaries were then integrated
+    into the DCW master country database using the ARC/INFO command UPDATE.
+     
+    The country specific data set, containing all of the sub-national
+    hierarchy, was extracted from the DCW master data set using the
+    ARC/INFO command RESELECT and the second level administrative
+    units were extracted from the country specific data set using
+    the ARC/INFO command DISSOLVE.
+     
+    A master data set, based on the Digital Chart of the World (DCW)
+    PONET layer, was created.  Burkina Faso, Mali, Ethiopia, and Eritrea
+    are included in the master data set, however, these countries
+    have international boundaries that have been revised.
+     
+    The changes to Burkina Faso are:
+    The Digital Chart of the World (DCW) International boundary was used
+    for the International boundary for Burkina Faso with the only revisions
+    being those listed below.
+     
+    From : -2 degrees; 55 minutes; 8 seconds Longitude and
+    : 13 degrees;37 minutes; 37 seconds Latitude
+     
+    To : -0 degrees; 57 minutes; 41 seconds Longitude and
+    : 14 degrees; 52 minutes; 14 seconds Latitude
+     
+    AND...
+     
+    From : 0 degrees; 3 minutes; 33 seconds Longitude and
+    : 14 degrees; 58 minutes; 15 seconds Latitude
+     
+    To : 0 degrees; 13 minutes; 55 seconds Longitude and
+    : 14 degrees; 58 minutes; 15 seconds Latitude
+     
+    These changes are defined by FEWS/ARD Washington, DC, USA.
+     
+    The changes to Mali are:
+    The Digital Chart of the World (DCW) International boundary was used
+    for the International boundary for Mali with the only revisions
+    being those listed below.
+     
+    From : -2 degrees; 55 minutes; 8 seconds Longitude and
+    : 13 degrees;37 minutes; 37 seconds Latitude
+     
+    To : -0 degrees; 57 minutes; 41 seconds Longitude and
+    : 14 degrees; 52 minutes; 14 seconds Latitude
+     
+    AND...
+     
+    From : 0 degrees; 3 minutes; 33 seconds Longitude and
+    : 14 degrees; 58 minutes; 15 seconds Latitude
+     
+    To : 0 degrees; 13 minutes; 55 seconds Longitude and
+    : 14 degrees; 58 minutes; 15 seconds Latitude
+     
+     
+    These changes are defined by FEWS/ARD Washington, DC, USA.
+     
+     
+    The changes to Ethiopia are:
+    The Digital Chart of the World (DCW) International boundary was used
+    for the International boundary for Ethiopia with the only revisions
+    being those listed below.
+     
+    From :  36 degrees; 34 minutes; 5 seconds Longitude and
+    :  14 degrees; 14 minutes; 25 seconds Latitude
+     
+    To : 42 degrees; 25 minutes; 22 seconds Longitude and
+    : 12 degrees; 26 minutes; 53 seconds Latitude
+     
+    These changes are defined by FEWS/ARD Washington, DC, USA.
+     
+    The changes to Eritrea are:
+    The Digital Chart of the World (DCW) International boundary was used
+    for the International boundary of Eritrea with the only revisions
+    being those listed below:
+     
+    From : 36 degrees; 34 minutes; 5 seconds Longitude and
+    : 14 degrees; 14 minutes; 25 seconds Latitude
+     
+    To : 42 degrees; 25 minutes; 22 seconds Longitude and
+    : 12 degrees; 26 minutes; 53 seconds Latitude
+     
+    These changes are defined by FEWS/ARD Washington, DC, USA.
+     
+    The international boundary for Namibia was extracted from an ARC/INFO
+    LIBRARY created from the ARC/INFO version of the Digital Chart of the
+    World (DCW) using the ARC/INFO tool LIBRARIAN.
+     
+     
+     
+    <b>Revisions</b>
+    During ARC/INFO coverage development modifications were made to the digital
+    files to generate a database with a common scale, uniform level of
+    resolution, consistent coding scheme and comparable (standardized)
+    measurement data.
+     
+     
+     
+     
+    <b>Reviews_Applied_to_Data</b>
+    Peer review, 03/96, FEWS/ARD Washington, D.C.
+     
+    Digital line work and attribute data checked for discrepancies and
+    approved for release to FEWS in-country and
+    regional field representatives.
+     
+     
+     
+     
+    <b>Related_Spatial_and_Tabular_Data_Sets</b>
+    None
+     
+     
+     
+     
+    <b>References_Cited</b>
+    Environmental Systems Research Institute (ESRI), Inc., 1993,
+    "Digital Chart of the World (DCW),"  PONET Layer.
+    ESRI.  Redlands, CA, USA.  Scale - 1:1000000.
+     
+    Deichmann, Uwe,  1994, "A Medium Resolution Population Database
+    for Africa."  The National Center for Geographic Information and
+    Analysis, Department of Geography, University of California,
+    Santa Barbara, CA, USA.
+     
+     
+     
+    <b>Notes</b>
+    USAID - United States Agency for International Development.
+    FEWS - Famine Early Warning System
+    ARD - Associates in Rural Development
+    EDC - EROS Data Center
+    USGS - United States Geological Survey
+    MRPDA - Medium Resolution Population Database for Africa
+     
+     
+     
+     
+<b><a name="section1.3">Time_Period_of_Content</a></b>
+    <b>Range_of_Dates/Times</b>
+    Beginning_Date: 1996
+    Beginning_Time: 0000
+    Ending_Date: Unknown
+    Ending_Time: 0000
+    <b>Currentness_Reference</b>
+    The "MRPDA" was published in 1994.  Many sources were used to
+    compile the data.
+     
+    The DCW database was originally published in 1992.
+    Data currency varies from place to place depending on the
+    currency of the Operational Navigation Charts (ONC).
+    Chart currency ranged from the mid 1960s to the early 1990s.
+    Compilation dates for every ONC chart are included in the database.
+     
+    The additional attributes were added in April of 1996 by the EROS
+    Data Center (EDC).
+     
+     
+     
+     
+<b><a name="section1.4">Status</a></b>
+    <b>Progress:</b> complete
+    <b>Maintenance_and_Update_Frequency</b>
+    As needed.
+     
+     
+     
+     
+<b><a name="section1.5">Spatial_Domain</a></b>
+    <b>Bounding_Coordinates</b>
+    West_Bounding_Coordinate: 11.71562958
+    East_Bounding_Coordinate: 25.25670052
+    North_Bounding_Coordinate: -16.95989418
+    South_Bounding_Coordinate: -28.97142982
+<p>
+<b><a name="section1.6">Keywords</a></b>
+    <b>Theme</b>
+        Theme_Keyword_Thesaurus: None
+        Theme_Keyword:  Boundary
+    <b>Place</b>
+        Place_Keyword_Thesaurus: None
+        Place_Keyword:  Namibia, Africa, WA, NB
+    <b>Stratum</b>
+        Stratum_Keyword_Thesaurus: None
+        Stratum_Keyword:
+    <b>Temporal</b>
+        Temporal_Keyword_Thesaurus: None
+        Temporal_Keyword:
+<p>
+<b><a name="section1.7">Access_Constraints</a></b>
+Acknowledgment of the EDC-International Program and the U.S. Geological
+Survey would be appreciated in products derived from these data.
+ 
+Although these data have been processed successfully on a computer
+system at the EROS Data Center, no warranty expressed or implied is made
+by FEWS/ARD or USGS/EDC regarding the utility of the data on any other
+system, nor shall the act of distribution constitute any such warranty.
+ 
+The Geological Survey will warrant the delivery of this product in
+computer-readable format, and will offer appropriate adjustment of
+credit when the product is determined unreadable by correctly adjusted
+computer input peripherals, or when the physical medium is delivered in
+damaged condition.  Requests for adjustment of credit must be made
+within 90 days from the date of this shipment from the ordering site.
+ 
+This data set contains data that has copyright protection and
+is not for general (public) distribution.
+ 
+ 
+ 
+ 
+<b><a name="section1.8">Use_Constraints</a></b>
+The data should not be use for navigation or for producing
+maps requiring high geodetic accuracy.
+ 
+ 
+ 
+ 
+<b><a name="section1.9">Point_of_Contact:</a></b> See <a href="#section6">Distribution_Information</a> for contact information.
+<p>
+<b><a name="section1.12">Data_Set_Credit</a></b>
+The USAID/FEWS Project and EDC International Program deserve
+credit for this data set.
+ 
+ 
+ 
+ 
+<b><a name="section1.12">Security_Information</a></b>
+    Security_Classification_System: None
+    Security_Classification:  UNCLASSIFIED
+    Security_Handling_Description: None
+<p>
+<b><a name="section1.13">Native_Data_Set_Environment:</a></b> SunOS UNIX, ARC/INFO version 8.2
+<p>
+<b>Cross_Reference</b>
+    <b>Originator:</b> Environmental Systems Research Institute (ESRI), Inc.
+    <b>Publication_Date:</b> 1993
+    <b>Publication_Time:</b> 0000
+    <b>Title:</b> Digital Chart of the World (DCW), PONET Layer
+    <b>Edition:</b> Unknown
+    <b>Geospatial_Data_Presentation_Form:</b> map
+    <b>Series_Information</b>
+        Series_Name: Unknown
+        Issue_Identification: None
+    <b>Publication_Information</b>
+        Publication_Place: Redlands, CA, USA
+        Publisher: ESRI
+    <b>Other_Citation_Details:</b> Scale - 1:1000000
+    <b>Online_Linkage:</b> http://www.esri.com
+    <b>Larger_Work_Citation:</b> DCW
+<br>
+<b>Cross_Reference</b>
+    <b>Originator:</b> Deichmann, Uwe
+    <b>Publication_Date:</b> 1994
+    <b>Publication_Time:</b> 0000
+    <b>Title:</b> A Medium Resolution Population Database for Africa
+    <b>Edition:</b> Unknown
+    <b>Geospatial_Data_Presentation_Form:</b> map
+    <b>Series_Information</b>
+        Series_Name: Unknown
+        Issue_Identification: None
+    <b>Publication_Information</b>
+        Publication_Place: Santa Barbara, CA
+        Publisher: NCGIA, Dept of Geog, UCal
+    <b>Other_Citation_Details:</b> PubPlace: USA
+    <b>Online_Linkage:</b> Unknown
+    <b>Larger_Work_Citation:</b> None
+<br>
+<p>
+<hr>
+<h3><a name="section2">Data_Quality_Information</a></h3>
+<b>Attribute_Accuracy</b>
+    <b>Attribute_Accuracy_Report:</b> See <a href="#section5">Entity_Attribute_Information</a>
+<p>
+    <b>Quantitative_Attribute_Accuracy_Assessment</b>
+        Attribute_Accuracy_Value:  See Explanation
+        Attribute_Accuracy_Explanation:
+           Attribute accuracy is described, where present, with each
+           attribute defined in the Entity and Attribute Section.
+<p>
+<b><a name="section2.2">Logical_Consistency_Report:</a></b> Polygon topology present.
+<p>
+<b><a name="section2.3">Completeness_Report</a></b>
+All data were found to be topologically correct. No duplicate features are
+present. All polygons are closed, and all lines intersect where intended.
+No undershoots or overshoots are present.
+ 
+To the best knowledge of USAID/FEWS and EDC the data compiled
+in this data set meets the codes and/or procedures established
+for completeness and consistency.
+ 
+ 
+ 
+ 
+<b><a name="section12.4">Positional_Accuracy </a></b>
+    <b>Horizontal_Positional_Accuracy</b>
+        Horizontal_Positional_Accuracy_Report:
+        The absolute horizontal accuracy of the DCW for all features derived
+        from Operational Navigation Charts (ONC) is 2040 meters (6700 feet)
+        World Geodetic System (WGS84).
+         
+        The absolute horizontal accuracy of the DCW for all features derived from
+        Jet Navigation Charts (JNC) is 4270 meters (14006 feet) at
+        90% Circular Error.
+         
+         
+         
+         
+<br>
+        Quantitative_Horizontal_Positional_Accuracy_Assessment:
+            Horizontal_Positional_Accuracy_Value: 2040 meters
+            Horizontal_Positional_Accuracy_Explanation:  Resolution as reported
+<br>
+    <b>Vertical_Positional_Accuracy</b>
+        Vertical_Positional_Accuracy_Report:
+        The absolute vertical accuracy of the DCW is the same as for the original
+        ONC and JNC lithographs at 90% Linear Error (LE), Mean Sea Level (MSL).
+         
+         
+         
+         
+<b><a name="section12.5">Lineage:</a></b> See <a href="#section1.2.3">Supplemental_Information</a> for overview.
+<p>
+<b>Process_Steps</b>
+    <b>Process_Step</b>
+    Process_Description: ELIMINATE AFREGIONS5U AFREGIONS5E
+    Source_Used_Citation_Abbreviation:None
+    Process_Date:  19950825 
+    Process_Time:  1036
+    Source_Produced_Citation_Abbreviation: None
+    <b>Process_Step</b>
+    Process_Description: ARCEDIT /DGM/SAB/RSMITH/PROJECTS/AFREGIONS/HORN/AFREGIONS5E
+    Source_Used_Citation_Abbreviation:None
+    Process_Date:  19950828 
+    Process_Time:  1039
+    Source_Produced_Citation_Abbreviation: None
+    <b>Process_Step</b>
+    Process_Description: BUILD AFREGIONS5E
+    Source_Used_Citation_Abbreviation:None
+    Process_Date:  19950828 
+    Process_Time:  1050
+    Source_Produced_Citation_Abbreviation: None
+    <b>Process_Step</b>
+    Process_Description: RENAME AFREGIONS5E AFREGIONS5
+    Source_Used_Citation_Abbreviation:None
+    Process_Date:  19950828 
+    Process_Time:  1107
+    Source_Produced_Citation_Abbreviation: None
+    <b>Process_Step</b>
+    Process_Description: COPY AFREGIONS5 /DG1/IPSARCH/AFRICA/ARC/AFREGIONS/COVS/AFREGIONS5
+    Source_Used_Citation_Abbreviation:None
+    Process_Date:  19950828 
+    Process_Time:  1112
+    Source_Produced_Citation_Abbreviation: None
+    <b>Process_Step</b>
+    Process_Description: EXPORT COVER AFREGIONS5 /DG1/IPSARCH/AFRICA/ARC/AFREGIONS/EXP/AFREGIONS5.E00 NON
+    Source_Used_Citation_Abbreviation:None
+    Process_Date:  19950828 
+    Process_Time:  1147
+    Source_Produced_Citation_Abbreviation: None
+    <b>Process_Step</b>
+    Process_Description: RSMITH UPDATE AFREGIONS5 /EDCSNW6/IPS2/WORK/AFSAHEL/AFSAHEL AFREGIONS5U POLY .00
+    Source_Used_Citation_Abbreviation:None
+    Process_Date:  19951129 
+    Process_Time:  1341
+    Source_Produced_Citation_Abbreviation: None
+    <b>Process_Step</b>
+    Process_Description: RSMITH RENAME AFREGIONS5U AFREGIONS5
+    Source_Used_Citation_Abbreviation:None
+    Process_Date:  19951129 
+    Process_Time:  1357
+    Source_Produced_Citation_Abbreviation: None
+    <b>Process_Step</b>
+    Process_Description: RSMITH EXPORT COVER AFREGIONS5 /EDCSNW6/IPSARCH/AFRICA/ARC/AFREGIONS/EXP/AFREGIO
+    Source_Used_Citation_Abbreviation:None
+    Process_Date:  19951130 
+    Process_Time:  1534
+    Source_Produced_Citation_Abbreviation: None
+    <b>Process_Step</b>
+    Process_Description: RSMITH RENAME AFREGIONS5 AFREGIONS5A
+    Source_Used_Citation_Abbreviation:None
+    Process_Date:  19951214 
+    Process_Time:  1406
+    Source_Produced_Citation_Abbreviation: None
+    <b>Process_Step</b>
+    Process_Description: RSMITH RENAME AFREGIONS5A AFREGIONS5
+    Source_Used_Citation_Abbreviation:None
+    Process_Date:  19951214 
+    Process_Time:  1445
+    Source_Produced_Citation_Abbreviation: None
+    <b>Process_Step</b>
+    Process_Description: RSMITH COPY AFREGIONS5 AFREG_SAFE
+    Source_Used_Citation_Abbreviation:None
+    Process_Date:  19960501 
+    Process_Time:  1101
+    Source_Produced_Citation_Abbreviation: None
+    <b>Process_Step</b>
+    Process_Description: EXTERNALALL
+    Source_Used_Citation_Abbreviation:None
+    Process_Date:  19960501 
+    Process_Time:  1103
+    Source_Produced_Citation_Abbreviation: None
+    <b>Process_Step</b>
+    Process_Description: RSMITH ARCEDIT /EDCSNW6/IPSARCH/AFRICA/ARC/AFREGIONS/COVS/AFREG_SAFE
+    Source_Used_Citation_Abbreviation:None
+    Process_Date:  19960501 
+    Process_Time:  1433
+    Source_Produced_Citation_Abbreviation: None
+    <b>Process_Step</b>
+    Process_Description: EXTERNALALL
+    Source_Used_Citation_Abbreviation:None
+    Process_Date:  19960502 
+    Process_Time:   812
+    Source_Produced_Citation_Abbreviation: None
+    <b>Process_Step</b>
+    Process_Description: RSMITH COPY /EDCSNW6/IPSARCH/AFRICA/ARC/AFREGIONS/COVS/AFREG_SAFE AFREG
+    Source_Used_Citation_Abbreviation:None
+    Process_Date:  19960509 
+    Process_Time:  1431
+    Source_Produced_Citation_Abbreviation: None
+    <b>Process_Step</b>
+    Process_Description: RSMITH COPY /EDCSNW6/IPS2/WORK/AFREGIONS/AFREG AFFEWSADMIN
+    Source_Used_Citation_Abbreviation:None
+    Process_Date:  19960509 
+    Process_Time:  1536
+    Source_Produced_Citation_Abbreviation: None
+    <b>Process_Step</b>
+    Process_Description: RSMITH COPY /EDCSNW6/IPSARCH/AFRICA/ARC/AFREGIONS/COVS/AFFEWSADMIN AFFEWSADMIN
+    Source_Used_Citation_Abbreviation:None
+    Process_Date:  19960509 
+    Process_Time:  1604
+    Source_Produced_Citation_Abbreviation: None
+    <b>Process_Step</b>
+    Process_Description: RSMITH RESELECT AFFEWSADMIN WAADMIN POLY
+    Source_Used_Citation_Abbreviation:None
+    Process_Date:  19960510 
+    Process_Time:   836
+    Source_Produced_Citation_Abbreviation: None
+    <b>Process_Step</b>
+    Process_Description: RSMITH RENAME WAADMIN WAADMIN2
+    Source_Used_Citation_Abbreviation:None
+    Process_Date:  19960510 
+    Process_Time:  1024
+    Source_Produced_Citation_Abbreviation: None
+    <b>Process_Step</b>
+    Process_Description: WALKES IMPORT COVER WAADMIN2.E00 /EDCSNW6/IPS2/WALKES/WORK/AFADMIN/SOUTH/WA/COVS
+    Source_Used_Citation_Abbreviation:None
+    Process_Date:  19960802 
+    Process_Time:  1535
+    Source_Produced_Citation_Abbreviation: None
+    <b>Process_Step</b>
+    Process_Description: WALKES PROJECT COVER WAADMIN2 WAADMIN2P /EDCSNW6/IPS2/WALKES/WORK/PRJ/GEO2GEO.PR
+    Source_Used_Citation_Abbreviation:None
+    Process_Date:  19960802 
+    Process_Time:  1536
+    Source_Produced_Citation_Abbreviation: None
+    <b>Process_Step</b>
+    Process_Description: WALKES BUILD WAADMIN2P
+    Source_Used_Citation_Abbreviation:None
+    Process_Date:  19960802 
+    Process_Time:  1537
+    Source_Produced_Citation_Abbreviation: None
+    <b>Process_Step</b>
+    Process_Description: WALKES   DOCUMENT WAADMIN2P UPDATE WALKES
+    Source_Used_Citation_Abbreviation:None
+    Process_Date:  19960802 
+    Process_Time:  1542
+    Source_Produced_Citation_Abbreviation: None
+    <b>Process_Step</b>
+    Process_Description: WALKES EXPORT COVER WAADMIN2P /EDCSNW6/IPS2/WALKES/WORK/AFADMIN/SOUTH/WA/RON/WAA
+    Source_Used_Citation_Abbreviation:None
+    Process_Date:  19960814 
+    Process_Time:  1637
+    Source_Produced_Citation_Abbreviation: None
+    <b>Process_Step</b>
+    Process_Description: WALKES   DOCUMENT WAADMIN2P UPDATE WALKES
+    Source_Used_Citation_Abbreviation:None
+    Process_Date:  19960821 
+    Process_Time:   822
+    Source_Produced_Citation_Abbreviation: None
+    <b>Process_Step</b>
+    Process_Description: WALKES EXPORT COVER WAADMIN2P /EDCSNW6/IPS2/WALKES/WORK/AFADMIN/SOUTH/WA/RON/WAA
+    Source_Used_Citation_Abbreviation:None
+    Process_Date:  19960821 
+    Process_Time:   824
+    Source_Produced_Citation_Abbreviation: None
+    <b>Process_Step</b>
+    Process_Description: WALKES   DOCUMENT WAADMIN2P UPDATE WALKES
+    Source_Used_Citation_Abbreviation:None
+    Process_Date:  19960917 
+    Process_Time:  1445
+    Source_Produced_Citation_Abbreviation: None
+    <b>Process_Step</b>
+    Process_Description: WALKES EXPORT COVER WAADMIN2P /EDCSNW6/IPS2/WALKES/WORK/AFADMIN/SOUTH/WA/RON/WAA
+    Source_Used_Citation_Abbreviation:None
+    Process_Date:  19960919 
+    Process_Time:  1316
+    Source_Produced_Citation_Abbreviation: None
+    <b>Process_Step</b>
+    Process_Description: WALKES   DOCUMENT WAADMIN2P UPDATE WALKES
+    Source_Used_Citation_Abbreviation:None
+    Process_Date:  19960924 
+    Process_Time:  1007
+    Source_Produced_Citation_Abbreviation: None
+    <b>Process_Step</b>
+    Process_Description: WALKES   IMPORT COVER WAADMIN2P.E00 WAADMIN2
+    Source_Used_Citation_Abbreviation:None
+    Process_Date:  19970107 
+    Process_Time:  1043
+    Source_Produced_Citation_Abbreviation: None
+    <b>Process_Step</b>
+    Process_Description: WALKES   COPY WAADMIN2 WAADMN2
+    Source_Used_Citation_Abbreviation:None
+    Process_Date:  19970107 
+    Process_Time:  1043
+    Source_Produced_Citation_Abbreviation: None
+    <b>Process_Step</b>
+    Process_Description: WALKES   DOCUMENT WAADMN2 DELETE WALKES
+    Source_Used_Citation_Abbreviation:None
+    Process_Date:  19970107 
+    Process_Time:  1043
+    Source_Produced_Citation_Abbreviation: None
+    <b>Process_Step</b>
+    Process_Description: WALKES   DOCUMENT WAADMN2 COPY   /EDCSNW6/IPS2/WALKES/WORK/FEWS_CNT_ADMIN_LOGGER
+    Source_Used_Citation_Abbreviation:None
+    Process_Date:  19970107 
+    Process_Time:  1044
+    Source_Produced_Citation_Abbreviation: None
+    <b>Process_Step</b>
+    Process_Description: WALKES   DOCUMENT WAADMN2 UPDATE WALKES
+    Source_Used_Citation_Abbreviation:None
+    Process_Date:  19970107 
+    Process_Time:  1045
+    Source_Produced_Citation_Abbreviation: None
+    <b>Process_Step</b>
+    Process_Description: WALKES IMPORT COVER /DG1/SAB1/WALKES/WORK/AFADMN/SOUTH/E00/WAADMN2.E00 WAADMN2
+    Source_Used_Citation_Abbreviation:None
+    Process_Date:  19970409 
+    Process_Time:  1109
+    Source_Produced_Citation_Abbreviation: None
+    <b>Process_Step</b>
+    Process_Description: WALKES   DOCUMENT WAADMN2 UPDATE WALKES
+    Source_Used_Citation_Abbreviation:None
+    Process_Date:  19970409 
+    Process_Time:  1133
+    Source_Produced_Citation_Abbreviation: None
+    <b>Process_Step</b>
+    Process_Description: WALKES   DOCUMENT WAADMN2 UPDATE WALKES
+    Source_Used_Citation_Abbreviation:None
+    Process_Date:  19970417 
+    Process_Time:  1240
+    Source_Produced_Citation_Abbreviation: None
+    <b>Process_Step</b>
+    Process_Description: RSMITH COPY /DG1/SAB1/WALKES/WORK/AFADMN/SOUTH/WA/COVS/WAADMN2 WAADMN2
+    Source_Used_Citation_Abbreviation:None
+    Process_Date:  19970513 
+    Process_Time:  1026
+    Source_Produced_Citation_Abbreviation: None
+    <b>Process_Step</b>
+    Process_Description: RSMITH   DOCUMENT WAADMN2 UPDATE RSMITH
+    Source_Used_Citation_Abbreviation:None
+    Process_Date:  19970513 
+    Process_Time:  1052
+    Source_Produced_Citation_Abbreviation: None
+    <b>Process_Step</b>
+    Process_Description: RSMITH   EXPORT COVER WAADMN2 /EDCSNW6/FEWSARCH/METADATA_ADMN_UPD/EXP/WAADMN2.E0
+    Source_Used_Citation_Abbreviation:None
+    Process_Date:  19970521 
+    Process_Time:  1148
+    Source_Produced_Citation_Abbreviation: None
+    <b>Process_Step</b>
+    Process_Description: RSMITH   COPY WAADMN2 /EDCSNW6/FEWSARCH/COUNTRY/WA/WACOVS/WAADMN2
+    Source_Used_Citation_Abbreviation:None
+    Process_Date:  19970521 
+    Process_Time:  1336
+    Source_Produced_Citation_Abbreviation: None
+<p>
+<b><a name="section12.5">Cloud_Cover</a></b>
+0
+ 
+ 
+<hr>
+<h3><a name="section3">Spatial_Data_Organization_Information</a></h3>
+<b><a name="section3.2">Direct_Spatial_Reference_Method:</b> Vector</a>
+<br>
+<b>Point_and_Vector_Object_Information</b>
+    <b>SDTS_Terms_Description</b>
+        SDTS_Point_and_Vector_Object_Type: Point
+        Point_and_Vector_Object_Count: 33
+        SDTS_Point_and_Vector_Object_Type: String
+        Point_and_Vector_Object_Count: 105
+        SDTS_Point_and_Vector_Object_Type: GT-polygon composed of chains'
+        Point_and_Vector_Object_Count:  34
+<p>
+<hr>
+<h3><a name="section4">Spatial_Reference_Information </a></h3>
+<b><a name="section4.1">Horizontal_Coordinate_System_Definition </a></b>
+<pre>
+    <b>Geographic</b>
+        Latitude_Resolution:
+        Longitude_Resolution:
+        Geographic_Coordinate_Units:  Decimal Degrees
+    <b>Geodetic Model</b>
+        Horizontal_Datum_Name:
+        Ellipsoid_Name:  CLARKE1880
+<p>
+<hr>
+<h3><a name="section5">Entity_and_Attribute_Information </a></h3>
+<b><a name="section5.1">Detailed_Description </a></b>
+    <b>Entity_Type</b>
+    <b>Entity_Type_Label:</b> WAADMN2.PAT
+    <b>Entity_Type_Definition:</b> Polygon Attribute Table
+    <b>Entity_Type_Definition_Source:</b> FEWS/ARD Washington, DC, USA
+    <b>Attribute:</b>
+        Attribute_Label: -
+        Attribute_Definition: Polygon Attribute Table
+        Attribute_Definition_Source: FEWS/ARD Washington, DC, USA
+        Attribute_Domain_Values
+            Enumerated_Domain
+                Enumerated_Domain_Value: Relational database table
+                Enumerated_Domain_Value_Definition
+                Enumerated_Domain_Value_Definition_Source:
+    <b>Attribute:</b>
+        Attribute_Label: AREA
+        Attribute_Definition: Area of poly/region in square coverage units
+        Attribute_Definition_Source: Computed
+        Attribute_Domain_Values
+            Enumerated_Domain
+                Enumerated_Domain_Value: Positive real numbers
+                Enumerated_Domain_Value_Definition
+                Enumerated_Domain_Value_Definition_Source:
+    <b>Attribute:</b>
+        Attribute_Label: PERIMETER
+        Attribute_Definition: Perimeter of poly/region in coverage units
+        Attribute_Definition_Source: Computed
+        Attribute_Domain_Values
+            Enumerated_Domain
+                Enumerated_Domain_Value: Positive real numbers
+                Enumerated_Domain_Value_Definition
+                Enumerated_Domain_Value_Definition_Source:
+    <b>Attribute:</b>
+        Attribute_Label: WAADMN2#
+        Attribute_Definition: Internal feature number
+        Attribute_Definition_Source: Computed
+        Attribute_Domain_Values
+            Enumerated_Domain
+                Enumerated_Domain_Value: Sequential unique positive integer
+                Enumerated_Domain_Value_Definition
+                Enumerated_Domain_Value_Definition_Source:
+    <b>Attribute:</b>
+        Attribute_Label: WAADMN2-ID
+        Attribute_Definition: User-assigned feature number
+        Attribute_Definition_Source: User-defined
+        Attribute_Domain_Values
+            Enumerated_Domain
+                Enumerated_Domain_Value: Integer
+                Enumerated_Domain_Value_Definition
+                Enumerated_Domain_Value_Definition_Source:
+    <b>Attribute:</b>
+        Attribute_Label: ID
+        Attribute_Definition: Unique administrative unit code
+        Attribute_Definition_Source: FEWS/ARD
+        Attribute_Domain_Values
+            Enumerated_Domain
+                Enumerated_Domain_Value: Character
+                Enumerated_Domain_Value_Definition
+                Enumerated_Domain_Value_Definition_Source:
+    <b>Attribute:</b>
+        Attribute_Label: CNT-ABB
+        Attribute_Definition: Unique country abbreviation
+        Attribute_Definition_Source: Federal Information Processing Standard (FIPS)
+        Attribute_Domain_Values
+            Enumerated_Domain
+                Enumerated_Domain_Value: Character
+                Enumerated_Domain_Value_Definition
+                Enumerated_Domain_Value_Definition_Source:
+    <b>Attribute:</b>
+        Attribute_Label: ADMIN2
+        Attribute_Definition: Second level administrative unit names
+        Attribute_Definition_Source: FEWS/ARD
+        Attribute_Domain_Values
+            Enumerated_Domain
+                Enumerated_Domain_Value: Character
+                Enumerated_Domain_Value_Definition
+                Enumerated_Domain_Value_Definition_Source:
+    <b>Attribute:</b>
+        Attribute_Label: NUM-CODE
+        Attribute_Definition: Unique numeic administrative unit identifier
+        Attribute_Definition_Source: EROS Data Center (EDC)
+        Attribute_Domain_Values
+            Enumerated_Domain
+                Enumerated_Domain_Value: Character
+                Enumerated_Domain_Value_Definition
+                Enumerated_Domain_Value_Definition_Source:
+    <b>Attribute:</b>
+        Attribute_Label: REGION
+        Attribute_Definition: ARD defined region in Africa that Namibia is associated with
+        Attribute_Definition_Source: FEWS/ARD
+        Attribute_Domain_Values
+            Enumerated_Domain
+                Enumerated_Domain_Value: Character
+                Enumerated_Domain_Value_Definition
+                Enumerated_Domain_Value_Definition_Source:
+    <b>Attribute:</b>
+        Attribute_Label: FEWS-ABB
+        Attribute_Definition: Unique country abbreviation
+        Attribute_Definition_Source: FEWS/ARD
+        Attribute_Domain_Values
+            Enumerated_Domain
+                Enumerated_Domain_Value: Character
+                Enumerated_Domain_Value_Definition
+                Enumerated_Domain_Value_Definition_Source:
+    <b>Attribute:</b>
+        Attribute_Label: FEWSID
+        Attribute_Definition: Unique administrative unit identifier
+        Attribute_Definition_Source: FEWS/ARD
+        Attribute_Domain_Values
+            Enumerated_Domain
+                Enumerated_Domain_Value: Character
+                Enumerated_Domain_Value_Definition
+                Enumerated_Domain_Value_Definition_Source:
+    <b>Attribute:</b>
+        Attribute_Label: FEWSID2
+        Attribute_Definition: Unique identifier for the second level administrative units
+        Attribute_Definition_Source: FEWS/ARD
+        Attribute_Domain_Values
+            Enumerated_Domain
+                Enumerated_Domain_Value: Character
+                Enumerated_Domain_Value_Definition
+                Enumerated_Domain_Value_Definition_Source:
+<p>
+<b><a name="section5.2"> Overview_Description </a></b>
+    <b><a name="section5.2.1">Entity_and_Attribute_Overview </a></b>
+     
+    The item (ID) defines the unique administrative unit code,
+    as defined by FEWS/ARD.
+    The item (CNT-ABB) defines the unique country abbreviation,
+    as defined by EDC.
+    The item (ADMIN2) defines the second level administrative
+    unit names, as defined by FEWS/ARD.
+    The item (NUM-CODE) defines the unique numeric administrative
+    unit identifier, as defined by EDC.
+    The item (REGION) defines the African region that Namibia is
+    associated with, as defined by FEWS/ARD.
+    The item (FEWS-ABB) defines the unique country abbreviation,
+    as defined by FEWS/ARD.
+    The item (FEWSID) defines the unique administrative unit
+    identifier, as defined by FEWS/ARD.
+    The item (FEWSID2) defines the unique identifiers for the
+    second level administrative units, as defined by FEWS/ARD.
+     
+    ID................N/A
+    CNT-ABB...........WA
+    NUM-CODE..........N/A
+    REGION............SOUTH
+    FEWS-ABB..........NB
+    FEWSID............N/A
+     
+    ADMIN2                    FEWSID2
+     
+    BETHANIEN                 WA2BETHANIEN
+    BOESMANLAND               WA2BOESMANLAND
+    CAPRIVI                   WA2CAPRIVI
+    DAMARALAND                WA2DAMARALAND
+    GOBABIS                   WA2GOBABIS
+    GROOTFONTEIN              WA2GROOTFONTEIN
+    HEREROLAND EAST           WA2HEREROLAND EAST
+    HEREROLAND WEST           WA2HEREROLAND WEST
+    KAOKOLAND                 WA2KAOKOLAND
+    KARASBURG                 WA2KARASBURG
+    KARIBIB                   WA2KARIBIB
+    KAVANGO                   WA2KAVANGO
+    KEETMANSHOOP              WA2KEETMANSHOOP
+    LUDERITZ                  WA2LUDERITZ
+    MALTAHOHE                 WA2MALTAHOHE
+    MARIENTAL                 WA2MARIENTAL
+    NAMALAND                  WA2NAMALAND
+    OKAHANDJA                 WA2OKAHANDJA
+    OMARURU                   WA2OMARURU
+    OTJIWARONGO               WA2OTJIWARONGO
+    OUTJO                     WA2OUTJO
+    OWAMBO                    WA2OWAMBO
+    REHOBOTH                  WA2REHOBOTH
+    SWAKOPMUND                WA2SWAKOPMUND
+    TSUMEB                    WA2TSUMEB
+    WINDHOEK                  WA2WINDHOEK
+     
+     
+     
+     
+    <b>Entity_and_Attribute_Detail_Citation:</b> Not Available
+<p>
+<hr>
+<h3><a name="section6">Distribution_Information </a></h3>
+<pre>
+ 
+<hr>
+<h3><a name="section7">Metadata_Reference_Section</a></h3>
+Metadata_Date: 19970513
+Metadata_Contact:
+ 
+Metadata_Standard_Name: FGDC Content Standards for Digital Geospatial Metadata
+Metadata_Standard_Version:  19940608
+Metadata_Time_Convention:  Local Time
+Metadata_Security_Information:
+    Metadata_Security_Classification_System:  None
+    Metadata_Security_Classification:  UNCLASSIFIED
+    Metadata_Security_Handling_Description:  None
+</pre>
+<hr>
+Last modified: 03-03-04.10:44:50.Tue
+</body>
+</html>
